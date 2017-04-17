@@ -1,0 +1,255 @@
+.form-control {
+    color: #555;
+    background-color: $white;
+
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    
+    
+    
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+    margin:10px 6px;
+    padding: 5px 10px;
+    @include box-shadow(3px, 3px, 5px, $color-shadow, $inset:"");
+
+}
+
+
+
+#contactform {background: url('../img/water-bg.jpg') fixed; 
+                background-size:100% 100%; 
+                 @include box-shadow(0px, 0px, 100px, $color-shadow, $inset:"");
+        }
+
+
+ .main   {
+
+    &-services {
+      background: url('../img/fibre-bg.jpg') no-repeat fixed; 
+      background-size:cover; 
+      @include box-shadow(0px, 0px, 100px, $color-shadow, $inset:"");
+      display:flex;
+      justify-content:space-around; 
+    }
+
+    &-contact {
+        overflow:auto;
+        background: url('../img/water-bg.jpg') fixed; 
+        background-size:100% 100%; 
+        @include box-shadow(0px, 0px, 100px, $color-shadow, $inset:"");
+    }
+    
+    &-services, &-about, &-product, &-testimonials, &-contact {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &-product, &-about {
+        padding-left:20px;
+        padding-right:20px;
+        }
+
+}
+
+.contact-details {
+  @extend %border;
+  border-radius: $br;
+  background-color: $white;
+}
+
+.services {
+ &-inner {
+  margin: 0.5em;
+  background-color: $white;
+  padding: 1em;
+  border-radius: $br;
+ }
+}
+
+.map {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+
+
+/* ----------------- Testimonial Slider -------------------------*/
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#carousel-example-generic {
+  margin-top: 7em;
+}
+
+.carousel-caption {
+  height:100%;
+  width:100%;
+  left:0px !important;
+  right:0px !important;
+  bottom:0px;
+  border-radius: $br;
+  max-width: 1100px;
+  background-color: $color-shadow;
+  margin-left: auto;
+  margin-right: auto;
+  
+  h1 {
+    @include text(3.625rem, $weight: 200, $color: $color-text-light);
+  }
+  li {
+    list-style-type: none;
+    @include text(1.625rem, $weight: 400, $color: $color-text-light);
+  }
+}
+
+  .carousel-control.left, .carousel-control.right {
+    background-image: none;
+  }
+  
+  .carousel-content {
+    color:black;
+    display:flex;
+    align-items:center;
+    }
+
+    #text-carousel {
+      width: 100%;
+      height: auto;
+      padding: 50px;
+    }
+
+    .product-info li {
+      text-align:left;
+    }
+    .services  {
+        padding: 10px 2px;
+
+        img{
+            width:100%;
+            max-width: 160px;
+            -webkit-filter: drop-shadow(3px 3px 3px #222); 
+            filter: drop-shadow(3px 3px 3px #222);
+        } 
+
+      }
+
+  .service-info {
+    text-align: left;
+  }
+
+
+
+  a.read-more {
+    text-decoration: none;
+    font-size: 18px;
+    color:$alert-info;
+
+    &:hover{
+      color: $dark-blue;
+    }
+  }
+
+ 
+
+
+
+
+
+
+/* ----------------- Testimonial Slider -------------------------*/
+
+@media #{$brk-wide} {
+  
+    .slide-text {
+        width:100%;
+        left:20px;
+        li {
+            font-size: 2em;
+            padding: 2px 10px; 
+        }
+        h1{
+            font-size: 4em;
+            line-height: 1.1;   
+            }
+      }
+}
+
+  @media #{$brk-phone} {
+
+    .carousel-caption {
+      display:none;
+    }
+
+    .main-services {
+      background: url('') no-repeat fixed; 
+      background-size:cover; 
+      @include box-shadow(0px, 0px, 0px, $color-shadow, $inset:"");
+    }
+
+    #contactform {
+        background: url('') fixed; 
+        background-size:100% 100%; 
+        @include box-shadow(0px, 0px, 100px, $color-shadow, $inset:"");
+        }
+
+    .slide {
+       &-img {
+        width:100%;
+        margin-top: 10px;
+        top:-80px;
+        } 
+
+      &-text {
+        position:relative;
+        width:100%;
+
+        li {
+        font-size: 1.5em;
+        line-height: 0.9em;
+        padding:0px;
+        }
+
+        h1{
+        font-size: 2.8em;  
+        }
+      }
+    }
+
+    img.small {
+        display:block;
+    }
+    li span {
+        margin-left:0px;
+        }
+    footer p {
+      display:none;
+    }
+
+    img.product-info {
+        width:100%;
+       }
+
+    img.arrow {
+      display:inline-block;
+    }
+}
+
+
+  
+
+
+

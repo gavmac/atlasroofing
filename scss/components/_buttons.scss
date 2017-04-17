@@ -1,0 +1,39 @@
+
+  input#submit.btn.btn-primary {
+    background-color: $alert-note;
+    border-color:$white;
+
+    &:hover{
+    background-color: $yellow-orange;
+    }
+  }
+
+  /* Custom default button */
+.btn {
+  &-default,
+  &--default:hover,
+  &--default:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritence from `body` */
+    background-color: $white;
+    border: 1px solid $white;
+  }
+}
+
+.btn-success {
+    background-color:$alert-confirm;
+    border-color:$alert-confirm;
+
+    .disabled{
+      .focus, &:hover {
+        background-color:$alert-note;
+        border-color:$alert-note;
+      }
+    }
+  }
+
+  // .btn-success.disabled.focus, .btn-success.disabled:hover, .btn-success[disabled].focus, .btn-success[disabled]:hover, fieldset[disabled] .btn-success.focus, fieldset[disabled] .btn-success:hover {
+  //   background-color:$alert-note;
+  //   border-color:$alert-note;
+  // }
+

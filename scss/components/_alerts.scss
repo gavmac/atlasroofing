@@ -1,0 +1,16 @@
+.alert {
+  margin-top: 20px;
+  }
+  
+.alert:first-child { margin:0; }
+
+.alert h6 {
+  padding-bottom: 2px;
+  display: inline-block;
+  } 
+  
+
+.alert-info {color: $alert-info; }
+.alert-note { color: $alert-note;  }
+.alert-confirm { color: $alert-confirm; }
+.alert-error { color: $alert-error; }

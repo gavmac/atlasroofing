@@ -1,0 +1,27 @@
+// Web fonts
+
+@mixin font-face($family, $file) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$path-font}/#{$file}-webfont.eot');
+    src: url('#{$path-font}/#{$file}-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$path-font}/#{$file}-webfont.woff') format('woff'),
+         url('#{$path-font}/#{$file}-webfont.ttf') format('truetype');
+  }
+}
+
+// Text
+
+@mixin text($size, $l-height: null, $weight: null, $color: null) {
+  font-size: $size;
+  line-height: $l-height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+
+      -webkit-box-shadow:$top $left $blur $color #{$inset};
+      -moz-box-shadow:$top $left $blur $color #{$inset};
+      box-shadow:$top $left $blur $color #{$inset};
+    }

@@ -1,0 +1,80 @@
+/* Base Styles -------------------- */
+
+html,body {
+  @include text(1.1em, 1.5, $color: $color-text-base);
+  margin: 0;
+  font-family: $stack-helvetica;
+  height: 100%;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: $stack-abolition;
+}
+
+h2 {
+  @include text(3.3125em, 1.1, normal);
+  margin: 0 0 .5em;
+}
+
+h3 {
+  @include text(1.25em, 1.2, $color: $color-text-dark);
+  margin-bottom: 1.7em;
+}
+
+h4 {
+  @include text(1em, 1, $color: $color-text-dark);
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+  border-radius: $br;
+}
+
+ul,
+ol {
+  margin: 30px 0;
+}
+
+li {
+
+  span {
+    margin-left:14%;
+  }
+}
+
+
+hr {
+    border: 0px none;
+    height: 4px;
+    margin: 25px 0px;
+    background-image: linear-gradient(to right, transparent, rgba(118, 196, 213, 0.5), transparent);
+}
+
+/* Pseudo-classes ------------------ */
+
+a {
+  &:link {
+    color: $color-link-default;
+    text-decoration: none;
+  }
+  &:visited {
+    color: $color-link-visited;
+  }
+  &:hover {
+    color: rgba($color-link-default, .5);
+  }
+}
+
+.cover {
+  padding: 0 20px;
+  .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+}
+
+
+

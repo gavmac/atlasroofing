@@ -1,0 +1,26 @@
+{
+  "name": "atlas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "teststart"
+  },
+  "keywords": [
+    "atlas",
+    "fibreglass",
+    "roofing"
+  ],
+  "author": "Gavin Macken",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-refresh": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0"
+  }
+}

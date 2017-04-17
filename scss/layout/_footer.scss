@@ -1,0 +1,22 @@
+footer {
+    background-color: $primary-blue;
+    text-align: left;
+
+    &.arrow {
+      display:none;
+    }
+
+    img {
+      max-width:180px;
+      padding: 5px;
+      float:left;
+    }
+
+    p {
+      float:right;
+      color: $white;
+      padding-top: 30px;
+    }
+  }
+
+  

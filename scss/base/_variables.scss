@@ -1,0 +1,57 @@
+// Descriptive color variables
+
+$white          	: #fff;
+$black          	: #000;
+$grey           	: #878787;
+$light-blue			: #3b90a3;
+$primary-blue   	: #3b90a3;
+$dark-blue  		: #255f75;
+$green 				: #8fc236;
+$blue				: #3fabf6;
+$red 				: #fa4d5a;
+$yellow-orange		: #fcad25;
+
+// Functional color variables
+$alert-info 	: $yellow-orange;
+$alert-note 	: $blue;
+$alert-confirm 	: $green;
+$alert-error 	: $red;
+
+
+$color-prim         : $primary-blue;
+$color-sec          : $light-blue;
+
+$color-text-light   : $white;
+$color-text-base    : $grey;
+$color-text-dark    : $dark-blue;
+
+$color-border-light : lighten($grey, 35%);
+$color-border-dark  : $yellow-orange;
+
+$color-link-default : $yellow-orange;
+$color-link-visited : $light-blue;
+
+$color-shadow       : rgba($black,.3);
+$color-body         : $white;
+
+// Font stacks
+
+$stack-sans-serif : Helvetica, Arial, sans-serif;
+$stack-helvetica  : 'Helvetica Neue', $stack-sans-serif;
+$stack-abolition  : 'Abolition Regular', $stack-sans-serif;
+
+// Border radius
+
+$br: 10px;
+
+// Asset paths
+
+$path-img  : '../img';
+$path-font : '../fonts';
+
+// Media query breakpoints
+$brk-smallphone	: '(max-width: 430px)';
+$brk-phone		: '(max-width: 575px)';
+$brk-narrow 	: '(max-width: 800px)';
+$brk-laptop		: '(max-width: 900px)';
+$brk-wide   	: '(max-width: 1100px)';
